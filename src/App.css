@@ -601,7 +601,7 @@ input, select, textarea {
 			z-index: -1;
 		}
 
-		body.landing.is-preload:before {
+		/* body.landing.is-preload:before {
 			-moz-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-webkit-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
 			-ms-animation: spinner-show 1.5s 1 0.25s ease forwards, spinner-rotate 0.75s infinite linear !important;
@@ -616,7 +616,7 @@ input, select, textarea {
 			animation: none !important;
 			opacity: 1;
 			z-index: 100000;
-		}
+		} */
 
 	@media (-webkit-min-device-pixel-ratio: 2) {
 
