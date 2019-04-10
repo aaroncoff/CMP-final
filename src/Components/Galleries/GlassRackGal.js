@@ -4,14 +4,14 @@ import Gallery from 'react-grid-gallery';
 import '../../App.css';
 import { ENGINE_METHOD_PKEY_ASN1_METHS } from 'constants';
 
-<p class="aboutUs">
+{/* <p class="aboutUs">
 Quality is our benchmark and the foundation that our company is built on <br />
 We achieve this with core values of:<br />
 -Having pride and loyalty in our company<br />
 -Superior customer service<br />
 -Outright dependability and continuous improvement<br />
 
-</p>
+</p> */}
 
 const IMAGES = [{
         src: require("../../Media/Images/Gallery/IMG_3810.jpg"),
