@@ -60,7 +60,7 @@ export default class App extends Component {
   {/* <!-- Header -->  */}
 
     <header id="header">
-      <h1 id="logo"><a href="/">Landed</a></h1>
+      {/* <h1 id="logo"><a href="/">Landed</a></h1> */}
  
 
             <input id="toggle-menu" type="checkbox" />
