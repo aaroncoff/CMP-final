@@ -57,7 +57,7 @@ export default class Home extends Component {
 
     {/* Two */}
     <section id="two" class="spotlight style2 right">
-      <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+      <span class="image fit main"><img src="./Media/Images/AA-Main-Background-2.jpg" alt="" /></span>
       <div class="content">
         <header>
           <h2>WE ARE YOUR METAL FABRICATION SPECIALISTS</h2>
@@ -91,7 +91,7 @@ export default class Home extends Component {
     <footer id="footer">
       <ul class="icons">
         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
         <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
         <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>

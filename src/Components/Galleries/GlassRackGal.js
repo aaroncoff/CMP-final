@@ -76,8 +76,8 @@ const IMAGES = [{
    
     }].map(img => {
         img.thumbnail = img.src;
-        img.thumbnailWidth = 320;
-        img.thumbnailHeight = 174;
+        img.thumbnailWidth = 370;
+        img.thumbnailHeight = 274;
         img.orientation = 1;
 
         return img;
