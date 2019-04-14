@@ -3426,7 +3426,8 @@ input, select, textarea {
 		background: transparent;
 		box-shadow: none;
 		position: absolute;
-	}
+  }
+  
 
 /* Banner */
 
@@ -4436,6 +4437,17 @@ input, select, textarea {
     top: 20px;
     right: 120px;
   }
+}
+
+.Logo {
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+a.homeIcon {
+float: left;
+z-index: 50000;
 }
 
 

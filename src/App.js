@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import routes from './routes';
 import routes2 from './routes2';
 import './App.css';
+import Logo from './Components/Logo';
 
 export default class App extends Component {
 
@@ -61,13 +62,14 @@ export default class App extends Component {
 
     <header id="header">
       {/* <h1 id="logo"><a href="/">Landed</a></h1> */}
- 
+      {/* <Link to='/'><img src='./Media/Images/logo.png' alt='logo' className="homeIcon"/></Link> */}
+      <Logo/>
 
             <input id="toggle-menu" type="checkbox" />
             <label htmlFor="toggle-menu" className="menu-on">MENU</label>
             <label htmlFor="toggle-menu" className="menu-off"></label>
             <nav className='primary-nav'>
-              <Link to='/'>HOME</Link>
+              {/* <Link to='/' >HOME</Link> */}
               <Link to='/about'>ABOUT US</Link>
               <div className="dropdown dd-list">
                 <a onClick={this.dropdownClicked} className="dropbtn">Products</a>
