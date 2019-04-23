@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Guarantee from './Media/Text/Guarantee';
 import Warranty from './Media/Text/Warranty';
 import Title from './Media/Text/Title';
+import Logo from './Components/Logo';
 
 
 export default class Home extends Component {
@@ -14,11 +15,12 @@ export default class Home extends Component {
    <section id="banner">
       <div class="content">
         <header>
+          {/* <Logo/> */}
           <h2>YOUR METAL FABRICATION EXPERTS</h2>
           <p>#1 Glass Rack Fabricator
           in the SOUTHEAST!</p>
         </header>
-        <span class="image"><img src="images/logo.png" alt="" /></span>
+        <span class="image"><Logo/></span>
       </div>
       <a href="#one" class="goto-next scrolly">Next</a>
     </section>
@@ -89,6 +91,22 @@ export default class Home extends Component {
 
     {/* Footer */}
     <footer id="footer">
+       <div className="body-img-parent">
+           {/* <img src={require('./Media/Images/HomeBackground.jpeg')} alt={'body-img'} className='body-img'></img> */}
+           <div className="body-img-child">
+           </div>
+         </div>
+         <div className="reviewParent">
+           <div className="reviewChild">
+             <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
+             <h2>"Custom Metal Products does outstanding work. The quality, attention to detail, and production turn
+               around is why we continue to send all our fabrication needs to Jonas and his staff."</h2>
+             <h4>-Frankie Willingham, President, All Things Outdoors, LLC.</h4>
+             <br/>
+             <h2>"Great craftsmanship, very professional."</h2>
+             <h4>-Art Crew, Jeriel Builder Services.</h4>
+           </div>
+         </div>
       <ul class="icons">
         <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
         <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>

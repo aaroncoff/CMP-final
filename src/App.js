@@ -60,19 +60,22 @@ export default class App extends Component {
   
   {/* <!-- Header -->  */}
 
-    <header id="header">
+
+<header id="header">
       {/* <h1 id="logo"><a href="/">Landed</a></h1> */}
       {/* <Link to='/'><img src='./Media/Images/logo.png' alt='logo' className="homeIcon"/></Link> */}
-      <Logo/>
+      {/* <Logo/> */}
 
-            <input id="toggle-menu" type="checkbox" />
+      <div className="navparent">
+        <div className="navchild">
+        <input id="toggle-menu" type="checkbox" />
             <label htmlFor="toggle-menu" className="menu-on">MENU</label>
             <label htmlFor="toggle-menu" className="menu-off"></label>
             <nav className='primary-nav'>
-              {/* <Link to='/' >HOME</Link> */}
+              <Link to='/' >HOME</Link>
               <Link to='/about'>ABOUT US</Link>
               <div className="dropdown dd-list">
-                <a onClick={this.dropdownClicked} className="dropbtn">Products</a>
+                <a onClick={this.dropdownClicked} className="dropbtn">Product Galleries</a>
                 <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
                   <Link to='/glassracks'>Glass Racks</Link>
                   <Link to='/metalfab'>Metal Fabrication</Link>
@@ -81,6 +84,9 @@ export default class App extends Component {
               <a className='revText' href='https://goo.gl/cB5xd9'>LEAVE A REVIEW</a>
               <Link to='/contact'>CONTACT US</Link>
             </nav>
+        </div>
+      </div>
+
      
 
       
@@ -135,7 +141,6 @@ export default class App extends Component {
         {/* </ul> */}
       {/* </nav> */}
     </header>
-
 
 
 
