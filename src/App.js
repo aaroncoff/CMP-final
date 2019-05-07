@@ -40,6 +40,10 @@ export default class App extends Component {
       }
   }
 
+  navigate() {
+
+  }
+
   render() {
     return (
 
@@ -176,56 +180,26 @@ export default class App extends Component {
     {/* Load our React component. */}
     {/* <script src="glass_gallery.js"></script> */}
     </body>
-  </div>
-      // <div className="App">
-      
-        /* <div className="topparent">
-          <img src={require('./Media/Images/banner3.jpg')} alt={'hero'} className='hero'></img>
-          <div className="topchild">
-          <a href='https://www.facebook.com/Custom-Metal-Products-426651564470418/' className='facebook'><img src={require('./Media/Images/fb-white.png')}/></a>
-          </div>
-          
-        </div>
+    <footer id="footer">
+
+ 
+
 
        
-        <div className="navparent">
-          <div className="navchild">
-            <input id="toggle-menu" type="checkbox" />
-            <label htmlFor="toggle-menu" className="menu-on">MENU</label>
-            <label htmlFor="toggle-menu" className="menu-off"></label>
-            <nav className='primary-nav'>
-              <Link to='/'>HOME</Link>
-              <Link to='/about'>ABOUT US</Link>
-              <div className="dropdown dd-list">
-                <button onClick={this.dropdownClicked} className="dropbtn">Products</button>
-                <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
-                  <Link to='/glassracks'>Glass Racks</Link>
-                  <Link to='/metalfab'>Metal Fabrication</Link>
-                </div>
-              </div>
-              <a className='revText' href='https://goo.gl/cB5xd9'>LEAVE A REVIEW</a>
-              <Link to='/contact'>CONTACT US</Link>
-            </nav>
-          </div>
-        </div>
-        <div className="routes">
-          {routes}
-        </div>
-        <div className="bodyparent">
-          <div className="bodychild">
-            {routes2}
-          </div>
-        </div>
-        <div className="footerparent">
-          <div className="footerchild">
-          </div>
-          <div className="contactInfo">
-
-            <a href="tel:+16784268802" className="phone">678-426-8802</a>
-          </div>
-        </div> */
-      /* </div> */
+      <ul class="icons">
+        {/* <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> */}
+        {/* <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook" src="./Media/Images/fb-white.png"><span class="label">Facebook</span></a></li> */}
+        <li><img src={require("./Media/Images/fb-white.png")} className="icon alt fa-facebook"/></li>
+        {/* <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li> */}
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net">Aaron Coffey</a></li>
+      </ul>
+    </footer>
+  </div>
     );
   }
 }
-

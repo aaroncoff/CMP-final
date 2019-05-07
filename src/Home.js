@@ -27,7 +27,7 @@ export default class Home extends Component {
 
 {/* one */}
   <section id="one" class="spotlight style1 bottom">
-    <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+    <span class="image fit main"><img src="./Media/Images/37296.jpeg" alt="" /></span>
       <div class="content">
         <div class="container">
           <div class="row">
@@ -49,7 +49,7 @@ export default class Home extends Component {
               <h2>2 WEEK GUARANTEE</h2>
               <p>fabricated and delivered</p>
               <h2>12 MONTH WARANTY</h2>
-              <p>protection against manufacturig defects</p>
+              <p>protection against manufacturing defects</p>
             </div>
           </div>
         </div>
@@ -63,9 +63,9 @@ export default class Home extends Component {
       <div class="content">
         <header>
           <h2>WE ARE YOUR METAL FABRICATION SPECIALISTS</h2>
-          <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+          <p>We offer hundreds of fine-tuned designs that we can tailor to fit your needs</p>
         </header>
-        <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+        {/* <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p> */}
         <ul class="actions">
           <li><a href="#" class="button">Learn More</a></li>
         </ul>
@@ -117,17 +117,7 @@ export default class Home extends Component {
           </div> 
         </div>
        
-      <ul class="icons">
-        {/* <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> */}
-        <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-        {/* <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-        <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li> */}
-      </ul>
-      <ul class="copyright">
-        <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net">Aaron Coffey</a></li>
-      </ul>
+
     </footer>
 </div>
       // <div className='outer'>
