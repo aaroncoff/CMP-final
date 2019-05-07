@@ -74,7 +74,7 @@ export default class Home extends Component {
     </section>
 
     {/* Five */}
-    <section id="five" class="wrapper style2 special fade">
+    {/* <section id="five" class="wrapper style2 special fade">
       <div class="container">
         <header>
           <h2>FREE ESTIMATES</h2>
@@ -87,7 +87,7 @@ export default class Home extends Component {
           </div>
         </form>
       </div>
-    </section>
+    </section> */}
 
     {/* Footer */}
     <footer id="footer">
@@ -96,27 +96,37 @@ export default class Home extends Component {
            <div className="body-img-child">
            </div>
          </div>
+         <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
          <div className="reviewParent">
+
            <div className="reviewChild">
-             <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
+          
+             {/* <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img> */}
              <h2>"Custom Metal Products does outstanding work. The quality, attention to detail, and production turn
                around is why we continue to send all our fabrication needs to Jonas and his staff."</h2>
              <h4>-Frankie Willingham, President, All Things Outdoors, LLC.</h4>
-             <br/>
+          </div>
+        </div>
+        <img src={require('./Media/Images/stars.png')} alt={'stars'} className='stars'></img>
+        <div className="reviewParent2">
+       
+          <div className="reviewChild2">
+            
              <h2>"Great craftsmanship, very professional."</h2>
              <h4>-Art Crew, Jeriel Builder Services.</h4>
-           </div>
-         </div>
+          </div> 
+        </div>
+       
       <ul class="icons">
-        <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+        {/* <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> */}
         <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        {/* <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
         <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li> */}
       </ul>
       <ul class="copyright">
-        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net">Aaron Coffey</a></li>
       </ul>
     </footer>
 </div>

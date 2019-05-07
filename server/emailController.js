@@ -1,6 +1,7 @@
+require('dotenv').config()
 const nodemailer = require('nodemailer');
 // const xoauth2 = require('xoauth2');
-require('dotenv').config()
+
 
 module.exports = {
     sendEmail: (req,res) => {
@@ -19,7 +20,7 @@ module.exports = {
                 rejectUnauthorized: false
             }
         })
-        console.log('transporter', transporter)
+        console.log('transporterzzz', transporter)
 
         let mailOptions = {
             from: name + ' ' + process.env.NODEMAILER_ADDRESS,
@@ -46,7 +47,6 @@ module.exports = {
 
 
 
-// require('dotenv').config()
 // var nodemailer = require('nodemailer');
 
 

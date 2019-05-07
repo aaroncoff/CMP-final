@@ -17,8 +17,8 @@
   text-align: center;
 }
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+html, body, span, applet, object,
+iframe, h1, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -26,7 +26,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -34,6 +34,22 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
+
+footer {
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+	
+h2 {
+	margin: 0 auto !important;
+	display: flex;
+	text-align: center;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -107,7 +123,7 @@ input, select, textarea {
 		transition: none !important;
 	} */
 
-	body, input, select, textarea {
+	body, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Roboto", Helvetica, sans-serif;
 		font-size: 15pt;
@@ -147,7 +163,7 @@ input, select, textarea {
 		color: #ffffff;
 		font-weight: 300;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		/* margin: 0 0 1em 0; */
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2179,7 +2195,7 @@ input, select, textarea {
 
 	header h2 + p {
 		/* font-size: 1.25em; */
-		margin-top: -1em;
+		/* margin-top: -1em; */
 		line-height: 1.75em;
 		
 	}
@@ -2386,7 +2402,7 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: black !important;
 		opacity: 1.0;
 	}
 
@@ -3512,7 +3528,7 @@ input, select, textarea {
 
 				#banner .content header h2 {
 					font-size: 2.5em;
-					margin: 0;
+					margin: 0 auto;
 				}
 
 				#banner .content header p {
@@ -3540,6 +3556,92 @@ input, select, textarea {
 	body.is-touch #banner {
 		background-attachment: scroll;
 	}
+
+/* Banner2 */
+
+#banner2 {
+	background-attachment: fixed;
+	background-color: #272833;
+	background-image: url("./Media/Images/Staff/CMP-Team-NEWEST3.jpg");
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+	min-height: 100vh;
+	position: relative;
+	text-align: center;
+	z-index: 21;
+}
+
+	#banner2:before {
+		content: '';
+		display: inline-block;
+		height: 100vh;
+		vertical-align: middle;
+		width: 1%;
+	}
+
+	#banner2:after {
+		/* background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/37294.jpeg");;
+		background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/37294.jpeg");;
+		background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/37294.jpeg");;
+		background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/37294.jpeg");; */
+		content: '';
+		display: block;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	#banner2 .content {
+		display: inline-block;
+		/* background-image: url("../css/images/ie/37294.jpeg"); */
+		margin-right: 1%;
+		max-width: 95%;
+		padding: 6em;
+		position: relative;
+		text-align: center;
+		vertical-align: middle;
+		z-index: 1;
+	}
+
+		#banner2 .content header {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+			#banner2 .content header h2 {
+				font-size: 2.5em;
+				margin: 0 auto;
+			}
+
+			#banner2 .content header p {
+				margin: 0 auto;
+				top: 0;
+			}
+
+		#banner2 .content .image {
+
+			border-radius: 100%;
+			display: inline-block;
+			height: 18em;
+			margin-left: 3em;
+			vertical-align: middle;
+			width: 18em;
+		}
+
+			#banner2 .content .image img {
+				/* background-image: url("/images/logo.png"); */
+				/* border-radius: 100%; */
+				display: block;
+				width: 100%;
+			}
+
+body.is-touch #banner2 {
+	background-attachment: scroll;
+}
+
 
 /* Footer */
 
@@ -3623,7 +3725,7 @@ input, select, textarea {
 			}
 
 			.spotlight.bottom .content {
-				padding: 3.825em 0 2.95em 0;
+				padding: 4.825em 0 4.95em 0;
 			}
 
 			.spotlight.left .content, .spotlight.right .content {
@@ -3725,7 +3827,6 @@ input, select, textarea {
 			}
 
 				#banner .goto-next {
-					height: 7em;
 				}
 
 				#banner .content {
@@ -4748,6 +4849,8 @@ a {
 }
 
 .form-parent {
+
+  text-decoration-color: black;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -4763,10 +4866,12 @@ a {
 }
 
 .input {
+    text-decoration-color: black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 65%;
+  color: black;
 
 }
 
@@ -4792,6 +4897,7 @@ a {
 
 .message {
   height: 150px;
+  background-color: white !important; 
 }
 
 .hbodychild {
@@ -5101,9 +5207,61 @@ margin-top: 1em;
 }
 
 
+.aboutParent {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  }
+  
+  .aboutUs {
+	display: flex;
+	justify-content: center;
+	
+	font-size: 24px;
+	margin: 0 auto !important;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  .grintro {
+	font-size: 24px;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  }
+  
+  /* .grex {
+	font-size: 16pt;
+	margin: 0 auto;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  } */
+  
+  .aboutContainer {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	justify-content: center;
+  
+  
+  }
+  
+  
+  
+  .aboutContainer > p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	width: 20%;
+  }
 
-
-.bodyParent {
+/* .bodyParent {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -5116,9 +5274,9 @@ margin-top: 1em;
   display: flex;
   justify-content: center;
   min-height: 1500px;
-}
+} */
 
-.aboutParent {
+/*.aboutParent {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -5149,7 +5307,9 @@ margin-top: 1em;
   padding: 40px;
   line-height: 2;
   font-family: 'Raleway', sans-serif;
-}
+} */
+
+
 
 
 .Jonas {
@@ -5509,4 +5669,35 @@ margin-top: 1em;
   color: white;
 
 }
+
+.reviewParent {
+	margin: 0 auto;
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+	padding-bottom: 5em;
+}
+
+.reviewChild {
+	margin: 0 auto;
+	display: flex;
+	max-width: 75%;
+	flex-direction: column;
+}
+
+.reviewParent2 {
+	margin: 0 auto;
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+}
+
+.reviewChild2 {
+	margin: 0 auto;
+	display: flex;
+	max-width: 75%;
+	flex-direction: column;
+	
+}
+
 

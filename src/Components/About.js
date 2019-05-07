@@ -5,7 +5,22 @@ export default class About extends Component{
     render(){
         return(
         <div className="aboutParent">
-         <div className='Team'><img src={require('../Media/Images/Staff/CMP Team.jpg')} alt={'Team'} className={'staffpic'}></img></div>
+           <section id="banner2">
+            {/* <div class="content">
+             <header>
+          
+                <h2>YOUR METAL FABRICATION EXPERTS</h2>
+                <p>#1 Glass Rack Fabricator
+                in the SOUTHEAST!</p>
+            </header>
+            <span class="image"><Logo/></span>
+            </div> */}
+        <a href="#one" class="goto-next scrolly">Next</a>
+    </section>
+         {/* <div className='Team'><img src={require('../Media/Images/Staff/CMP Team.jpg')} alt={'Team'} className={'staffpic'}></img></div>
+         <a href="#one" class="goto-next scrolly">Next</a>
+         <script src="./js/jquery.scrollex.min.js"></script> */}
+         <section id="one" >
             <h2 className="aboutUs">
             Quality is our benchmark and the foundation that our company is built on <br />
             We achieve this with core values of:<br />
@@ -22,6 +37,7 @@ export default class About extends Component{
                 <img src={require('../Media/Images/Staff/Jonas-and-Blake-at-Desk.jpg')} alt={'Desk'} className={'Desk'}></img>
                 <img src={require('../Media/Images/Staff/Rhonda-at-Desk.jpg')} alt={'Rhonda-Desk'} className={'Desk2'}></img>
             </div>
+        </section>
         </div>
         )
     }

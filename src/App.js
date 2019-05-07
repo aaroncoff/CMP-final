@@ -54,7 +54,7 @@ export default class App extends Component {
       <link rel="stylesheet" href="assets/css/main.css" />
       <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     </head>
-    <body class="is-preload landing">
+    <body className="is-preload landing">
 
           <div id="page-wrapper"> 
   
