@@ -3084,6 +3084,7 @@ input, select, textarea {
 
 			.spotlight .image.main img {
 				position: relative;
+
 			}
 
 		.spotlight .content {
@@ -3095,7 +3096,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+			background: rgb(23, 24, 32);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3529,11 +3530,14 @@ input, select, textarea {
 				#banner .content header h2 {
 					font-size: 2.5em;
 					margin: 0 auto;
+					color: white;
 				}
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+					color: white;
+					font-weight: bold;
 				}
 
 			#banner .content .image {
@@ -5702,3 +5706,9 @@ margin-top: 1em;
 }
 
 
+.headerText {
+	background-color: rgba(0,0,0, 0.4);
+	color: black !important;
+
+	padding: 3em;
+}

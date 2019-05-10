@@ -14,7 +14,7 @@ export default class Home extends Component {
    {/* <!-- Banner --> */}
    <section id="banner">
       <div class="content">
-        <header>
+        <header className="headerText">
           {/* <Logo/> */}
           <h2>YOUR METAL FABRICATION EXPERTS</h2>
           <p>#1 Glass Rack Fabricator

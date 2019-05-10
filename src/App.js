@@ -189,7 +189,7 @@ export default class App extends Component {
       <ul class="icons">
         {/* <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> */}
         {/* <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook" src="./Media/Images/fb-white.png"><span class="label">Facebook</span></a></li> */}
-        <li><img src={require("./Media/Images/fb-white.png")} className="icon alt fa-facebook"/></li>
+        <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/"><img src={require("./Media/Images/fb-white new.png")} className="icon alt fa-facebook"/></a></li>
         {/* <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
         <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
