@@ -3068,8 +3068,10 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("./Media/Images/AA-Main-Background-2.jpg");
-			/* background-repeat: no-repeat; */
+			background-image: url("./Media/Images/Website-Welder-New-OPT.jpg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			border-color: #5480f1;
 			content: '';
 			display: block;
 			height: 100%;
