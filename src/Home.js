@@ -4,6 +4,10 @@ import Guarantee from './Media/Text/Guarantee';
 import Warranty from './Media/Text/Warranty';
 import Title from './Media/Text/Title';
 import Logo from './Components/Logo';
+// import "~slick-carousel/slick/slick.css"; 
+// import "~slick-carousel/slick/slick-theme.css";
+import HomeSlider from './Components/HomeSlider';
+
 
 
 export default class Home extends Component {
@@ -27,14 +31,22 @@ export default class Home extends Component {
 
 {/* one */}
   <section id="one" class="spotlight style1 bottom">
-    <span class="image fit main"><img src="./Media/Images/37296.jpeg" alt="" /></span>
+    {/* <span class="image fit main"></span> */}
       <div class="content">
         <div class="container">
+        
+            
+              {/* <HomeSlider className="slider"/> */}
+         
+        
+   
+        
           <div class="row">
+          
             <div class="col-4 col-12-medium">
               <header>
                 <h2>Custom Glass Racks to Fit Your Needs</h2>
-                {/* <!-- <p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p> --> */}
+          
               </header>
             </div>
             <div class="col-4 col-12-medium">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import routes from './routes';
 import routes2 from './routes2';
 import './App.css';
+// import './Test.css';
 import Logo from './Components/Logo';
 
 export default class App extends Component {
