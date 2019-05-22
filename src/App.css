@@ -4748,6 +4748,8 @@ a {
 }
 
 .form-parent {
+
+  text-decoration-color: black;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -4763,10 +4765,12 @@ a {
 }
 
 .input {
+  text-decoration-color: black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 65%;
+  color: black;
 
 }
 
@@ -4792,6 +4796,7 @@ a {
 
 .message {
   height: 150px;
+  background-color: white !important;
 }
 
 .hbodychild {
@@ -5103,7 +5108,7 @@ margin-top: 1em;
 
 
 
-.bodyParent {
+/* .bodyParent {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -5149,7 +5154,7 @@ margin-top: 1em;
   padding: 40px;
   line-height: 2;
   font-family: 'Raleway', sans-serif;
-}
+} */
 
 
 .Jonas {
