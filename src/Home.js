@@ -74,7 +74,7 @@ export default class Home extends Component {
     </section>
 
     {/* Five */}
-    <section id="five" class="wrapper style2 special fade">
+    {/* <section id="five" class="wrapper style2 special fade">
       <div class="container">
         <header>
           <h2>FREE ESTIMATES</h2>
@@ -87,7 +87,7 @@ export default class Home extends Component {
           </div>
         </form>
       </div>
-    </section>
+    </section> */}
 
     {/* Footer */}
     <footer id="footer">
