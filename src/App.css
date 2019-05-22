@@ -5156,6 +5156,38 @@ margin-top: 1em;
   font-family: 'Raleway', sans-serif;
 } */
 
+.aboutParent {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+  }
+  
+  .aboutContainer {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	justify-content: center;
+  
+  
+  }
+  
+  
+  
+  .aboutContainer > p {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	width: 20%;
+  }
+  
+  .aboutUs {
+	font-size: 24px;
+	margin: 0 auto;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  } 
 
 .Jonas {
   height: 350px;
