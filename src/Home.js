@@ -6,7 +6,7 @@ import Title from './Media/Text/Title';
 import Logo from './Components/Logo';
 // import "~slick-carousel/slick/slick.css"; 
 // import "~slick-carousel/slick/slick-theme.css";
-import HomeSlider from './Components/HomeSlider';
+
 
 
 
