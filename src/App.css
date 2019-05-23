@@ -5856,7 +5856,7 @@ margin-top: 1em;
 
 /* slick-theme.min.css */
 
-@charset 'UTF-8';
+/* @charset 'UTF-8'; */
 
 .slick-dots,.slick-next,.slick-prev {
     position:absolute;
