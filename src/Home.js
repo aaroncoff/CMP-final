@@ -59,14 +59,16 @@ export default class Home extends Component {
 
     {/* Two */}
     <section id="two" class="spotlight style2 right">
-      <span class="image fit main"><img src="./Media/Images/AA-Main-Background-2.jpg" alt="CMP" /></span>
-      <div class="content">
-        <header>
-          <h1>WE ARE YOUR METAL FABRICATION SPECIALISTS</h1>
+      {/* <span class="image fit main"><img src="./Media/Images/Website-Welder-New-OPT.jpg" alt="CMP" /></span> */}
+      <div className="content">
+      {/* <h2 className="content1">WE ARE YOUR METAL FABRICATION SPECIALISTS</h2> */}
+        <header className="content2">
+
           <p>12 MONTH WARRANTY</p>
           <p>2 WEEK GUARANTEE</p>
+          <p>Contact us to get a complimentary consultation and estimate</p>
         </header>
-        <p>Contact us to get a complimentary consultation and estimate</p>
+     
         {/* <ul class="actions">
           <li><a href="#" class="button">Learn More</a></li>
         </ul> */}

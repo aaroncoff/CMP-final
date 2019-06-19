@@ -43,6 +43,8 @@ footer {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 	
 h2 {
@@ -155,16 +157,18 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	p {
+	/* p {
 		margin: 0 0 2em 0;
-	}
+	} */
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-weight: 300;
-		line-height: 1em;
-		/* margin: 0 0 1em 0; */
+		line-height: 5em;
+		margin: 0 0 1em 0;
 	}
+
+
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
@@ -175,6 +179,7 @@ input, select, textarea {
 		font-size: 2em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
+		padding-top: 0px;
 	}
 
 	h3 {
@@ -2621,6 +2626,7 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+	
 	}
 
 		ul.icons li {
@@ -2977,14 +2983,26 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
+		background-image: url("./Media/Images/Website-Welder-New-OPT.jpg");
 		background-attachment: fixed;
-		background-position: center center;
+		background-position: center 60px;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 68.6vh;
-		/* overflow: hidden; */
-    /* position: relative; */
-	/* object-fit: contain; */
+		border-style: solid;
+		border-color: #5480f1 !important;
+		border-bottom-width: 0.48em !important;
+		border-top-width: 0.48em !important;
+		
+		overflow: hidden;
+    /* position: relative;
+	object-fit: contain; */
+
+
+	/* width: 100%; */
+
+	bottom: 0;
+
 	
 	}
 
@@ -3068,7 +3086,7 @@ input, select, textarea {
 			z-index: 20;
 		}
 
-		.spotlight:before {
+		/* .spotlight:before {
 			background-image: url("./Media/Images/Website-Welder-New-OPT.jpg");
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -3079,10 +3097,19 @@ input, select, textarea {
 			height: 100%;
 			left: 0;
 			top: 0;
-			width: 100%;
+			width: auto;
 		}
 
-		.spotlight .image.main {
+		@media(max-width: 1630px) {
+			.spotlight:before {
+
+				display: flex;
+				margin: 0 auto;
+				
+			}
+		} */
+
+		/* .spotlight .image.main {
 	  display: none;
 	  
 
@@ -3092,24 +3119,31 @@ input, select, textarea {
 				position: relative;
 				
 
-			}
+			} */
+
+/* comment out below element to get rid of right box */
+/* comment out 'border-style' in below element to get rid of blue border */
 
 		.spotlight .content {
-			/* -moz-transform: translate(0,0);
-			-webkit-transform: translate(0,0);
-			-ms-transform: translate(0,0);
-			transform: translate(0,0);
-			-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
-			transition: transform 1s ease, opacity 1s ease; */
+	
 			background: rgb(23, 24, 32);
 			font-size: 18pt;
-			border-style: solid;
+			border-left-style: solid;
 			opacity: 1;
 			position: absolute;
 			height: 100%;
 			
+		}
+
+		.content1 {
+			color: red !important;
+			padding-top: -1em;
+		}
+
+		.content2 {
+			color: red !important;
+			padding-top: 2em;
+			justify-content: left;
 		}
 
 		.spotlight .goto-next {
@@ -3128,19 +3162,19 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		.spotlight.top .content, .spotlight.bottom .content {
+		/* .spotlight.top .content, .spotlight.bottom .content {
 			left: 0; 
 			padding: 0 0 3.1em 0;
-			/* width: 100%; */
+			width: 100%;
 			
-		}
+		} */
 
-		.spotlight.top .content {
-			border-bottom-width: 0.35em;
+		/* .spotlight.top .content {
+			border-bottom-width: 0.48em;
 			top: 0;
-		}
+		} */
 
-		.spotlight.bottom .content {
+		/* .spotlight.bottom .content {
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
@@ -3149,11 +3183,8 @@ input, select, textarea {
 			bottom: 0;
 			border-color: #5480f1 !important;
 			border-bottom-width: 0.35em !important;
-			/* justify-content: center; */
-			/* min-height: 0;
-			min-width: 0;
-			 */
-		}
+		
+		} */
 
 		.slider {
 			display: flex;
@@ -3173,13 +3204,16 @@ input, select, textarea {
 		}
 
 		.spotlight.left .content {
-			border-right-width: 0.35em;
+			border-right-width: 0.48em;
 			left: 0;
 		}
 
+/* comment out below element to move box from right to left side of div */
+/* border-left-width is for dividing blue border */
+
 		.spotlight.right .content {
-			border-left-width: 0.35em;
-      right: 0;
+			border-left-width: 0.48em;
+      		right: 0;
       
 		}
 
@@ -3690,7 +3724,9 @@ body.is-touch #banner2 {
 
 	#footer {
 		background: #272833;
-		padding: 6em 0;
+		/* padding-top: 1em; */
+		padding-bottom: none;
+		margin: 0;
 		text-align: center;
 	}
 
@@ -3774,7 +3810,7 @@ body.is-touch #banner2 {
 
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
-				width: 25em;
+				width: 15em;
 			}
 
 		/* Wrapper */
@@ -3830,10 +3866,10 @@ body.is-touch #banner2 {
 				.spotlight .content {
 					background-color: #1c1d26;
 					border-width: 0 !important;
-					border-top-width: 0.35em !important;
+					border-top-width: 0.48em !important;
 					bottom: auto !important;
 					left: auto !important;
-					padding: 4.5em 2.5em 2.5em 2.5em !important;
+					/* padding: 4.5em 2.5em 2.5em 2.5em !important; */
 					position: relative;
 					right: auto !important;
 					text-align: center;
@@ -5129,7 +5165,7 @@ a {
 
   background: rgba(39, 40, 51, 0.965);
   border-radius: 4px;
-  box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.075em 0.48em 0 rgba(0, 0, 0, 0.125);
   /* list-style: none; */
   /* margin-top: calc(-0.25em + 1px); */
   /* min-width: 12em; */
@@ -5723,7 +5759,7 @@ margin-top: 1em;
 	display: flex;
 	max-width: 100%;
 	flex-direction: column;
-	padding-bottom: 5em;
+	/* padding-bottom: 5em; */
 }
 
 .reviewChild {

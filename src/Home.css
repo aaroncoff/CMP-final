@@ -135,8 +135,9 @@
     width: 100%;
     color: white;
     background-color: #111e6c;
-
-    min-height: 10vh;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /* min-height: 10vh; */
     
   }
 
@@ -146,10 +147,12 @@
       width: 75%;
       color: white;
       background-color: #111e6c;
-      min-height: 20vh;
+      /* min-height: 10vh; */
       flex-direction: column;
       justify-content: center;
       justify-items: center;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
 
       min-height: 10vh;
   }
