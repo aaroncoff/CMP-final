@@ -94,10 +94,12 @@ export default class GlassRackGal extends Component {
         return (
             <div className="gallery-container clearfix">
                 <h1 className='grintro'>We fabricate glass handling equipment to fit your precise needs.
-                Whether you're moving glass around your shop or across the country, we will build it.</h1>
-                <h2 className='grex'>Double Sided Van Racks, Slide In A-Frames, 
+                Whether you're moving glass around your shop or across the country, we will build it.
+                Double Sided Van Racks, Slide In A-Frames, Aluminum Bodies, Glass L-Buck & Glass Totes, Rolling Glass Dollies & Much More!
+                </h1>
+                {/* <h2 className='grex'>Double Sided Van Racks, Slide In A-Frames, 
                     Aluminum Bodies,<br/> Glass L-Buck & Glass Totes, Rolling Glass Dollies & Much More!
-                </h2>
+                </h2> */}
                 <Gallery images={IMAGES} />
             </div>
         );

@@ -158,13 +158,16 @@ export default class MetalFabGal extends Component {
     render() {
         return (
             <div className="gallery-container clearfix">
-            <h1>
-                If it is made of metal, we can make it
+            <h1 className="mfIntro">
+                If it is made of metal, we can make it! <br/>
+                Piping, Filter House Fabrication & Installation, 
+                    Duct Work, Industrial Handrails, Dump Chipper Body, 
+                    Recycling Facility Conveyer, Structural Fabrication/Installation and more!
             </h1>
-                <h2>Piping, Filter House Fabrication & Installation, 
+                {/* <h2>Piping, Filter House Fabrication & Installation, 
                     Duct Work, Industrial Handrails, Dump Chipper Body, 
                     Recycling Facility Conveyer, Structural Fabrication/Installation
-                </h2>
+                </h2> */}
    
                 <Gallery images={IMAGES} />
             </div>

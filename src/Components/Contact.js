@@ -56,21 +56,31 @@ export default class Contact extends Component{
         
             <div className='contactParent'>
 
-                <h1>CONTACT US TODAY FOR A FREE QUOTE</h1>
+                <span className="contactText">CONTACT US TODAY FOR A FREE QUOTE</span>
 
-                                <div className='manualContact'>
+                    <div className='manualContact'>
                     
                     <div className='digits'>
-                        <div className='phone'>PHONE: 678-426-8802</div>
+                        <a className='tel: 678-426-8802'>PHONE: 678-426-8802</a>
                     </div>
                     <div className='address'>
-                        <div>ADDRESS: 459 Cadillac Pkwy</div>
-                        <div className='zip'>Dallas, GA 30157</div>
+                        {/* <div>ADDRESS: 459 Cadillac Pkwy</div>
+                        <div className='zip'>Dallas, GA 30157</div> */}
+                        {/* <aside>Address:</aside> */}
+                        <a href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
+                        459 Cadillac Pkwy<br/>
+                        Dallas, GA 30157
+                    
+                        </a>
+                        {/* <a className="zip" href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
+                        Dallas, GA 30157
+                        </a> */}
                     </div>
                 </div>
 
                 <div className='form-parent'>
                     <div className="form-child">
+                    <h1 className="emailInst">Send us an email!</h1>
                         <form className="input">
                             <input id="name" placeholder="Your Name" onChange={(e)=>this.setState({name: e.target.value})} value={this.state.name}/>
                             <input id="email" placeholder="Your email address" onChange={(e)=>this.setState({email: e.target.value})} value={this.state.email}/>

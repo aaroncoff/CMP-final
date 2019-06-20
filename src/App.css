@@ -129,9 +129,11 @@ input, select, textarea {
 
 	body, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		/* font-family: "Roboto", Helvetica, sans-serif; */
+		/* font-family: 'Raleway', sans-serif;  */
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		font-size: 15pt;
-		font-weight: bolder;
+		/* font-weight: bolder; */
 		line-height: 1.75em;
 	}
 
@@ -691,22 +693,22 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		/* @media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: 90%;
 				max-width: 100%;
 			}
 
-		} */
+		}
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 980px) {
 
 			.container {
 				width: 100% !important;
 			}
 
-		}
+		} */
 
 
 
@@ -719,6 +721,8 @@ input, select, textarea {
 	}
 	header {
 		/* background-color: rgba(51, 51, 51, 0.4); */
+		background: rgba(23, 24, 32, 0.4);
+		
 		/* opacity: 0.5; */
 	} 
 
@@ -1666,6 +1670,7 @@ input, select, textarea {
 		.spotlight .content {
 	
 			background: rgb(23, 24, 32);
+			/* background-color: rgba(51, 51, 51); */
 			font-size: 18pt;
 			border-left-style: solid;
 			opacity: 1;
@@ -2154,8 +2159,15 @@ input, select, textarea {
 			text-align: right;
 			vertical-align: middle;
 			z-index: 1;
-			background-color: rgba(51, 51, 51, 0.5);
+			/* background-color: rgba(51, 51, 51, 0.5); */
 		}
+
+		/* @media(min-width: 1100px){
+			#banner .content {
+				display: flex;
+				flex-direction: column;
+			}
+		} */
 
 			#banner .content header {
 				display: inline-block;
@@ -2172,7 +2184,7 @@ input, select, textarea {
 					margin: 0.5em 0 0 0;
 					top: 0;
 					color: white;
-					font-weight: bold;
+					/* font-weight: bold; */
 				}
 
 			#banner .content .image {
@@ -2188,8 +2200,8 @@ input, select, textarea {
 				#banner .content .image img {
 					/* background-image: url("/images/logo.png"); */
 					/* border-radius: 100%; */
-					display: block;
-					width: 100%;
+					/* display: block;
+					width: 100%; */
 				}
 
 	body.is-touch #banner {
@@ -2273,8 +2285,8 @@ input, select, textarea {
 			#banner2 .content .image img {
 				/* background-image: url("/images/logo.png"); */
 				/* border-radius: 100%; */
-				display: block;
-				width: 100%;
+				/* display: block;
+				width: 100%; */
 			}
 
 body.is-touch #banner2 {
@@ -2352,7 +2364,7 @@ body.is-touch #banner2 {
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1365px) {
 
 		/* Basic */
 
@@ -2403,7 +2415,7 @@ body.is-touch #banner2 {
 
 /* Medium */
 
-	@media screen and (max-width: 1100px) {
+	@media screen and (max-width: 1145px) {
 
 		/* Basic */
 
@@ -3222,6 +3234,13 @@ float: left;
 z-index: 50000;
 } */
 
+/* @media(max-width: 1363px){
+	.Logo {
+		padding-top: 0px;
+		padding-left: 0px;
+	}
+} */
+
 
 .navparent {
   position: relative;
@@ -3450,9 +3469,13 @@ a {
 }
 
 .manualContact {
-  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* text-align: left; */
   justify-content: center;
-  width: 160%;
+  font-size: 24px !important;
+  width: 100%;
 }
 
 .manualContact > div {
@@ -3461,13 +3484,14 @@ a {
 
 .digits {
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  width: 49%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  font-weight: 30;
+  text-align: center;
+  /* font-weight: 30; */
+  font-size: 24px !important;
 }
 
 .digits > h5 {
@@ -3480,14 +3504,48 @@ a {
   padding-top: 40px;
 }
 
+.manualContact > a {
+	font-size: 24px !important;
+}
+
 .address {
-  padding-bottom: 20px;
-  width: 49%;
+  
+
   margin: 0 auto;
+ 
+
+  padding-bottom: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  line-height: 30px;
+  font-size: 24px !important;
+}
+
+.emailInst {
+	  /* padding-bottom: 20px;
+  width: 49%;
+  margin: 0 auto; */
+
+  padding-top: 100px;
+  margin: 0 auto;
+  /* padding-top: 70px; */
+
+  padding-bottom: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 30;
+  line-height: 30px;
+  font-size: 24px;
 }
 
 .zip {
-  padding-left: 86px;
+  /* padding-left: 145px; */
+  /* padding-left: 4em; */
 }
 
 .form-parent {
@@ -3620,7 +3678,7 @@ a {
 
 
 
-.grintro {
+.grIntro {
   font-size: 24px;
   text-align: center;
   width: 800px;
@@ -3630,8 +3688,35 @@ a {
   font-family: 'Raleway', sans-serif;
 }
 
+.mfIntro {
+	font-size: 24px;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  }
+
+  .contactText {
+	
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	padding: 40px;
+	justify-content: center;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+  }
+
 .grex {
   font-size: 16pt;
+  text-align: center;
+  width: 800px;
+  color: white;
   margin: 0 auto;
   padding: 40px;
   line-height: 2;
@@ -3858,12 +3943,24 @@ margin-top: 1em;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	color: white;
   }
   
   .aboutUs {
 	display: flex;
 	justify-content: center;
-	
+	color: white;
+	font-size: 24px;
+	margin: 0 auto !important;
+	padding: 40px;
+	line-height: 2;
+	font-family: 'Raleway', sans-serif;
+  }
+
+  .aboutUs2 {
+	display: flex;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	margin: 0 auto !important;
 	padding: 40px;
@@ -3905,6 +4002,7 @@ margin-top: 1em;
 	margin-top: 5px;
 	margin-bottom: 30px;
 	width: 20%;
+	margin-left: 7px;
   }
 
 /* .bodyParent {
@@ -4004,6 +4102,7 @@ margin-top: 1em;
 .person1 > p {
   padding-top: 160px;
   padding-bottom: 30px;
+  left: 25px;
   font-size: 25pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 30;
@@ -4012,14 +4111,17 @@ margin-top: 1em;
 .person2 > p {
   padding-top: 160px;
   padding-bottom: 30px;
+  left: 25px;
   font-size: 25pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 30;
 }
 
+
 .person3 > p {
   padding-top: 160px;
   padding-bottom: 30px;
+  left: 25px;
   font-size: 25pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 30;
@@ -4028,6 +4130,7 @@ margin-top: 1em;
 .person4 > p {
   padding-top: 160px;
   padding-bottom: 30px;
+  left: 25px;
   font-size: 25pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 30;
@@ -4036,6 +4139,7 @@ margin-top: 1em;
 .person5 > p {
   padding-top: 160px;
   padding-bottom: 30px;
+  left: 25px;
   font-size: 25pt;
   font-family: 'Raleway', sans-serif;
   font-weight: 30;
@@ -4347,12 +4451,12 @@ margin-top: 1em;
 } */
 
 
-.headerText {
+/* .headerText {
 	background-color: rgba(51,51,51, 0.4);
 	color: black !important;
 
 	padding: 3em;
-}
+} */
 
 /* slick */
 
