@@ -4,6 +4,7 @@ import Guarantee from './Media/Text/Guarantee';
 import Warranty from './Media/Text/Warranty';
 import Title from './Media/Text/Title';
 import Logo from './Components/Logo';
+import { Link } from 'react-router-dom';
 
 
 export default class Home extends Component {
@@ -22,7 +23,7 @@ export default class Home extends Component {
         </header>
         <span class="image"><Logo/></span>
       </div>
-      <a href="#one" class="goto-next scrolly">Next</a>
+      <a href="#two" class="goto-next scrolly">Next</a>
     </section>
 
 {/* one */}
@@ -66,15 +67,15 @@ export default class Home extends Component {
 
           <p>12 MONTH WARRANTY</p>
           <p>2 WEEK GUARANTEE</p>
-          <p>Contact us<br/> 
-          for a free consultation and estimate</p>
+          <Link to='/contact'>CLICK HERE to Contact us FOR A FREE CONSULTATION AND ESTIMATE</Link>
+        
         </header>
      
         {/* <ul class="actions">
           <li><a href="#" class="button">Learn More</a></li>
         </ul> */}
       </div>
-      <a href="#three" class="goto-next scrolly">Next</a>
+      {/* <a href="#three" class="goto-next scrolly">Next</a> */}
     </section>
 
     {/* Five */}

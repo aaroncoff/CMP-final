@@ -3,18 +3,20 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 // import nodemailer from 'nodemailer';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 
-
-export default class Contact extends Component{
-    constructor(){
-        super()
+class Contact extends Component{
+    constructor(props){
+        super(props)
         this.state={
             name: '',
             email: '',
             text: ''
         }
+        console.log(this.props.google)
         this.handleSubmitButton = this.handleSubmitButton.bind(this)
+
         // this.clearInputs = this.clearInputs.bind(this)
     }
 
@@ -60,23 +62,33 @@ export default class Contact extends Component{
 
                     <div className='manualContact'>
                     
-                    <div className='digits'>
+                    {/* <div className='digits'>
                         <a className='tel: 678-426-8802'>PHONE: 678-426-8802</a>
-                    </div>
+                    </div> */}
                     <div className='address'>
                         {/* <div>ADDRESS: 459 Cadillac Pkwy</div>
                         <div className='zip'>Dallas, GA 30157</div> */}
                         {/* <aside>Address:</aside> */}
-                        <a href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
+                        {/* <a href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
                         459 Cadillac Pkwy<br/>
                         Dallas, GA 30157
                     
-                        </a>
+                        </a> */}
+
+
+
+                        {/* <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=459%20Cadillac%20Pkwy%2C%20Dallas%2C%20GA%2030157&key=AIzaSyCfKDX-xJQh-82dgpcsbAiv9nlrYfW6keA" allowfullscreen></iframe> */}
                         {/* <a className="zip" href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
                         Dallas, GA 30157
                         </a> */}
+
                     </div>
+
                 </div>
+
+                    <div className="mapParent">
+                        <Map className='map' google={this.props.google}/>
+                    </div>
 
                 <div className='form-parent'>
                     <div className="form-child">
@@ -109,3 +121,7 @@ export default class Contact extends Component{
 }
 //former password:
 //NODEMAILER_PASSWORD=custm3t@l404
+
+export default GoogleApiWrapper ({
+    apiKey: ('AIzaSyBwRY7CYE5KLAMzI-hpo1Df7qcBsfcftPc')
+})(Contact);

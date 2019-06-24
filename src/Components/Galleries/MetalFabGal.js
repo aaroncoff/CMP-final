@@ -158,12 +158,19 @@ export default class MetalFabGal extends Component {
     render() {
         return (
             <div className="gallery-container clearfix">
+            <h2 className="mfTitle">CUSTOM METAL FABRICATION</h2>
             <h1 className="mfIntro">
+                We can make practically anything out of metal! <br/>
+                Piping, Filter House Fabrication & Installation, 
+                    Duct Work, Industrial Handrails, Dump Chipper Body, 
+                    Recycling Facility Conveyer, Structural Fabrication/Installation and much more!
+            </h1>
+            {/* <h1 className="mfIntro">
                 If it is made of metal, we can make it! <br/>
                 Piping, Filter House Fabrication & Installation, 
                     Duct Work, Industrial Handrails, Dump Chipper Body, 
                     Recycling Facility Conveyer, Structural Fabrication/Installation and more!
-            </h1>
+            </h1> */}
                 {/* <h2>Piping, Filter House Fabrication & Installation, 
                     Duct Work, Industrial Handrails, Dump Chipper Body, 
                     Recycling Facility Conveyer, Structural Fabrication/Installation

@@ -93,7 +93,8 @@ export default class GlassRackGal extends Component {
     render() {
         return (
             <div className="gallery-container clearfix">
-                <h1 className='grintro'>We fabricate glass handling equipment to fit your precise needs.
+                <h2 className="grTitle">GLASS RACKS</h2>
+                <h1 className='grIntro'>We fabricate glass handling equipment to fit your precise needs.
                 Whether you're moving glass around your shop or across the country, we will build it.
                 Double Sided Van Racks, Slide In A-Frames, Aluminum Bodies, Glass L-Buck & Glass Totes, Rolling Glass Dollies & Much More!
                 </h1>

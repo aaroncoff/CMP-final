@@ -6,6 +6,7 @@ export default class About extends Component{
         return(
         <div className="aboutParent">
            <section id="banner2">
+           <h2 className="teamTitle">MEET OUR TEAM!</h2>
             {/* <div class="content">
              <header>
           
