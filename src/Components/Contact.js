@@ -60,20 +60,25 @@ class Contact extends Component{
 
                 <span className="contactText">CONTACT US TODAY FOR A FREE QUOTE</span>
 
-                    <div className='manualContact'>
+               
                     
                     {/* <div className='digits'>
                         <a className='tel: 678-426-8802'>PHONE: 678-426-8802</a>
                     </div> */}
-                    <div className='address'>
+                    <div className='contactChild'>
                         {/* <div>ADDRESS: 459 Cadillac Pkwy</div>
-                        <div className='zip'>Dallas, GA 30157</div> */}
+                        <div className='zip'>Dallas, GA 30157</div>  */}
                         {/* <aside>Address:</aside> */}
-                        {/* <a href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156">
+                        
+                        <a className="addressText" href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156" target='_blank'>
+                        <b>Address:</b><br/>
                         459 Cadillac Pkwy<br/>
-                        Dallas, GA 30157
+                       <b>Dallas, GA 30157</b>
                     
-                        </a> */}
+                        </a>
+                        <div className="phone">
+                            <a className='tel: 678-426-8802'>Phone:<br/> 678-426-8802</a>
+                        </div>
 
 
 
@@ -84,10 +89,21 @@ class Contact extends Component{
 
                     </div>
 
-                </div>
+           
 
                     <div className="mapParent">
-                        <Map className='map' google={this.props.google}/>
+                        <div className="mapChild">
+                            <Map className='map' google={this.props.google}
+                            zoom={11}
+                            initialCenter={{
+                                lat: 33.896694633525534,
+                                lng: -84.79924455423316
+                            }}
+                            // style={style}
+                            >
+                            <Marker/>
+                            </Map>
+                        </div>
                     </div>
 
                 <div className='form-parent'>
@@ -123,5 +139,6 @@ class Contact extends Component{
 //NODEMAILER_PASSWORD=custm3t@l404
 
 export default GoogleApiWrapper ({
-    apiKey: ('AIzaSyBwRY7CYE5KLAMzI-hpo1Df7qcBsfcftPc')
+    apiKey: ('AIzaSyBwRY7CYE5KLAMzI-hpo1Df7qcBsfcftPc'),
+    version: 3.31
 })(Contact);

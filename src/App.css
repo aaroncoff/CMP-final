@@ -143,7 +143,7 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		/* border-bottom: dotted 1px; */
-		color: #111e6c;
+		/* color: #111e6c; */
 		text-decoration: none;
 	}
 
@@ -1533,7 +1533,7 @@ input, select, textarea {
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 69vh;
 		border-style: solid;
-		border-color: #5480f1 !important;
+		border-color: #111d6c;
 		border-bottom-width: 0.48em !important;
 		border-top-width: 0.48em !important;
 		
@@ -1787,7 +1787,7 @@ input, select, textarea {
 		}
 
 		.spotlight.style2 .content {
-      border-color: #5480f1;
+      border-color: #111e6c;
       
 		}
 
@@ -3347,11 +3347,20 @@ z-index: 50000;
 
 .primary-nav > a {
  background: black;
+ text-transform: uppercase;
+ color: white;
+ padding: 0 0 10px 25px;
+ font-size: 15pt;
+ font-weight: 30;
+ border: none;
+ cursor: pointer;
+ font-weight: 30;
+ z-index: 100002;
 }
 
 
 
-a {
+/* a { */
   /* color: white;
   text-shadow: -1px 0 black, 0px black, 1px 0 black, 0 -1px black;
   text-decoration: none;
@@ -3361,20 +3370,22 @@ a {
 
   /* background: transparent; */
   /* background-color: black; */
-  text-transform: uppercase;
+
+
+  /* text-transform: uppercase;
   color: white;
   padding: 0 0 10px 25px;
   font-size: 15pt;
   border: none;
   cursor: pointer;
   font-weight: 30;
-  z-index: 100002;
+  z-index: 100002; */
 
-}
+/* } */
 
-@media(max-width: 590px) {
+/* @media(max-width: 590px) {
   a {
-    /* margin-bottom: 10px; */
+
     color: white;
     font-weight: 30;
   }
@@ -3415,7 +3426,7 @@ a {
   color: black;
  
 
-}
+} */
 
 #toggle-menu {
   display: none;
@@ -3466,7 +3477,7 @@ a {
 .footerparent {
   margin: 0 auto;
   display: flex;
-  background-color: purple;
+  /* background-color: purple; */
 }
 
 .footerchild {
@@ -3478,81 +3489,122 @@ a {
 
 .contactParent {
 	margin: 0 auto;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
+	padding: 50px;
 }
 
-.manualContact {
+.contactChild {
+	margin: 0 auto;
+ 
+	/* max-height: 80%; */
+	/* padding-bottom: 20px; */
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	/* text-align: center; */
+	/* padding: 50px; */
+	padding-bottom: 120px;
+	/* line-height: 30px; */
+	font-size: 24pt !important;
+	color: white;
+}
+/* .manualContact {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  /* text-align: left; */
   justify-content: center;
   font-size: 24px !important;
   width: 100%;
-}
+} */
 
-.manualContact > div {
+/* .manualContact > div {
   justify-content: center;
+} */
+
+.phone {
+  /* margin: 0; */
+  /* margin-left: 8.91em; */
+  /* left: 55%; */
+  top: 10px;
+  /* padding-top: 20px; */
+  /* padding-bottom: 0px; */
+  /* width: 50%; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: left;
+  text-justify: left;
+  font-weight: 30 !important;
+  font-size: 18pt !important;
+  float: right;
+  /* padding-left: 100px; */
+
 }
 
-.digits {
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  /* font-weight: 30; */
-  font-size: 24px !important;
-}
-
-.digits > h5 {
+/* .phone > h5 {
   margin-top: none;
   margin-bottom: none;
-}
+} */
 
-.digits > phone {
+/* .phone > phone {
   padding-bottom: 20px;
   padding-top: 40px;
-}
+} */
 
-.manualContact > a {
+/* .manualContact > a {
 	font-size: 24px !important;
-}
+} */
 
 .address {
   
 
   margin: 0 auto;
  
-  max-height: 100%;
-  padding-bottom: 20px;
-  width: 50%;
+  max-height: 80%;
+  /* padding-bottom: 20px; */
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
+  /* text-align: center; */
+  padding: 50px;
+  padding-bottom: 70px;
+  /* line-height: 30px; */
+  color: white;
+}
 
-  line-height: 30px;
-  font-size: 24px !important;
+.addressText {
+  /* padding-right: 10%; */
+  color: white;
+  font-weight: 30;
+  font-size: 18pt;
+  margin: 0;
+
 }
 
 .mapParent {
 	margin: 0 auto;
-	width: 60%;
-	max-height: 100;
+	width: 100%;
+	/* max-height: 150; */
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+}
+
+.mapChild {
+	margin: 0 auto;
+	width: 55%;
 	display: flex;
 	flex-direction: column;
 }
 
 .map {
-	margin: 0 auto;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	padding: 100px;
-	bottom: -100px;
+	/* margin: 0 auto; */
+	/* width: 100%; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	padding: 150px;
+	bottom: -150px;
 }
 
 .emailInst {
@@ -3681,7 +3733,7 @@ a {
   width: 75%;
   background-color: #111e6c;
 }
-
+/* 
 .contactInfo {
   font-weight: 20;
   flex-direction: row;
@@ -3691,7 +3743,7 @@ a {
   margin-bottom: 5px;
   text-align: left;
   padding-top: 38px;
-}
+} */
 
 .phone {
   font-weight: bolder;
@@ -3808,7 +3860,7 @@ a {
 .dropbtn:focus { outline:0; }
 
 @media(max-width: 590px) {
-  .dropbtn {
+  .dropbtn, .primary-nav > a  {
 
     /* font-size: 7pt; */
     font-weight: 30;
@@ -3821,7 +3873,7 @@ a {
 
 
 @media(min-width: 590px) {
-  .dropbtn {
+  .dropbtn, .primary-nav > a  {
     margin-top: 24px;
     font-size: 12pt;
     font-weight: 30;
@@ -3830,7 +3882,7 @@ a {
 }
 
 @media(min-width: 850px) {
-  .dropbtn {
+  .dropbtn, .primary-nav > a  {
   
     font-size: 17pt;
     font-weight: 30;
@@ -3839,7 +3891,7 @@ a {
 }
 
 @media(min-width: 1200px) {
-  .dropbtn {
+  .dropbtn, .primary-nav > a  {
 
     font-size: 27pt;
     font-weight: 30;
