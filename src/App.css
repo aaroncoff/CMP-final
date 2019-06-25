@@ -3354,7 +3354,6 @@ z-index: 50000;
  font-weight: 30;
  border: none;
  cursor: pointer;
- font-weight: 30;
  z-index: 100002;
 }
 
@@ -3863,7 +3862,7 @@ a {
   .dropbtn, .primary-nav > a  {
 
     /* font-size: 7pt; */
-    font-weight: 30;
+    /* font-weight: 30; */
 
   }
 
@@ -3915,6 +3914,13 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
+  color: white;
+  font-weight: 30;
+  font-size: 15pt;
+  text-transform: uppercase;
+  /* font-family: 'Raleway', sans-serif !important; */
+  /* font-family: "Roboto", Helvetica, sans-serif !important; */
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
   /* background-color: #111e6c;
   min-width: 25pt;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
@@ -3997,13 +4003,16 @@ body.landing .dropotron.level-0 {
 }
 
 .dropdown-content a {
-  /* color: white;
-  font-size: 17pt;
-  padding: 12px 16px;
+  color: white;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight:30;
+  font-size: 20pt;
+  /* padding: 12px 16px;
   text-decoration: none;
   display: block; */
 
-  font-size: 17pt;
+  /* font-size: 17pt; */
 
   border-top: solid 1px rgba(255, 255, 255, 0.035);
   /* padding: 0;
