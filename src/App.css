@@ -842,7 +842,7 @@ input, select, textarea {
 			border-color: #e44c65;
 		}
 
-	select {
+	/* select {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.3)' /%3E%3C/svg%3E");
 		background-size: 1.25rem;
 		background-repeat: no-repeat;
@@ -850,7 +850,7 @@ input, select, textarea {
 		height: 3em;
 		padding-right: 3em;
 		text-overflow: ellipsis;
-	}
+	} */
 
 		select option {
 			color: #ffffff;
@@ -1495,6 +1495,7 @@ input, select, textarea {
 	.goto-next {
 		border: 0;
 		bottom: 0;
+		/* top: 25; */
 		display: block;
 		height: 5em;
 		left: 50%;
@@ -1628,6 +1629,9 @@ input, select, textarea {
 		.spotlight:nth-last-of-type(20) {
 			z-index: 20;
 		}
+
+/* 
+		uncomment below to anchor 2nd image on homepage */
 
 		/* .spotlight:before {
 			background-image: url("./Media/Images/Website-Welder-New-OPT.jpg");
@@ -2114,10 +2118,10 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-attachment: fixed;
+		background-attachment: relative;
 		background-color: #272833;
 		background-image: url("./Media/Images/37294.jpeg");
-		background-position: center center;
+		/* background-position: center center; */
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		min-height: 100vh;
@@ -2141,7 +2145,7 @@ input, select, textarea {
 			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/37294.jpeg");; */
 			content: '';
 			display: block;
-			height: 100%;
+			/* height: 100%; */
 			left: 0;
 			position: absolute;
 			top: 0;
@@ -2151,12 +2155,13 @@ input, select, textarea {
 		#banner .content {
 			display: inline-block;
 			/* background-image: url("../css/images/ie/37294.jpeg"); */
-			margin-right: 1%;
-			max-width: 95%;
-			padding: 4em;
-			padding-right: 12em;
+			/* margin-right: 1%; */
+			max-width: 100%;
+			/* padding: 10em; */
+			padding-right: 10em;
+			padding-left: 10em;
 			position: relative;
-			text-align: right;
+			/* text-align: right; */
 			vertical-align: middle;
 			z-index: 1;
 			background-color: rgba(51, 51, 51, 0.5);
@@ -2171,7 +2176,7 @@ input, select, textarea {
 
 			#banner .content header {
 				display: inline-block;
-				vertical-align: middle;
+				/* vertical-align: middle; */
 			}
 
 				#banner .content header h2 {
@@ -2192,9 +2197,11 @@ input, select, textarea {
 				border-radius: 100%;
 				display: inline-block;
 				height: 18em;
+				/* bottom: 2em; */
+				/* right: 3em; */
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 16em;
 			}
 
 				#banner .content .image img {
@@ -2284,9 +2291,9 @@ input, select, textarea {
 		}
 
 			#banner2 .content .image img {
-				/* background-image: url("/images/logo.png"); */
-				/* border-radius: 100%; */
-				/* display: block;
+				/* background-image: url("/images/logo.png");
+				border-radius: 100%;
+				display: block;
 				width: 100%; */
 			}
 
@@ -2372,7 +2379,7 @@ body.is-touch #banner2 {
 
 /* Large */
 
-	@media screen and (max-width: 1365px) {
+	@media screen and (max-width: 1430px) {
 
 		/* Basic */
 
@@ -2409,9 +2416,27 @@ body.is-touch #banner2 {
 
 		/* Banner */
 
-			/* #banner .content {
+			#banner .content {
+				/* display: block; */
 				padding: 4.5em;
-			} */
+			}
+
+			
+			#banner .content header {
+				display: block;
+				margin: 0 0 2em 0;
+				text-align: center;
+			}
+
+			#banner .content .image {
+				margin: 0;
+				right: 3em;
+
+			}
+
+			.Logo {
+				width: 10%;
+			}
 
 		/* Footer */
 
@@ -2451,7 +2476,7 @@ body.is-touch #banner2 {
 					border-top-width: 0.48em !important;
 					bottom: auto !important;
 					left: auto !important;
-					/* padding: 4.5em 2.5em 2.5em 2.5em !important; */
+					padding: 4.5em 2.5em 2.5em 2.5em !important;
 					position: relative;
 					right: auto !important;
 					text-align: center;
@@ -2492,8 +2517,9 @@ body.is-touch #banner2 {
 				}
 
 				#banner .content {
-					padding: 9em 0;
+					padding: 9em 2em;
 					text-align: center;
+					/* padding-right: 4em; */
 				}
 
 					#banner .content header {
@@ -2504,6 +2530,8 @@ body.is-touch #banner2 {
 
 					#banner .content .image {
 						margin: 0;
+						right: 3em;
+		
 					}
 
 		/* Footer */
@@ -3232,7 +3260,7 @@ body.is-touch #banner2 {
 .Logo {
   width: 20%;
   padding-top: 30px;
-  /* padding-left: 10px; */
+  padding-left: 10px;
   /* background-color: rgba(39, 40, 51, 0.965);
   box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25); */
 }
@@ -3242,12 +3270,13 @@ float: left;
 z-index: 50000;
 } */
 
-/* @media(max-width: 1363px){
+@media(max-width: 1453px){
 	.Logo {
-		padding-top: 0px;
-		padding-left: 0px;
+		/* padding-top: 0px;
+		padding-left: 0px; */
+		/* justify-self: center; */
 	}
-} */
+}
 
 
 .navparent {
@@ -4069,12 +4098,14 @@ margin-top: 1em;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
 	padding-bottom: 0;
+	/* padding-left: 120; */
 	bottom: 1050px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
 	font-size: 40pt;
+	background-color: rgba(51, 51, 51, 0.5);
 	
   }
 
@@ -4219,7 +4250,8 @@ margin-top: 1em;
 	color: white;
 	font-size: 24px;
 	margin: 0 auto !important;
-	padding: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	line-height: 2;
 	font-family: 'Raleway', sans-serif;
   }
@@ -4230,7 +4262,8 @@ margin-top: 1em;
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	margin: 0 auto !important;
-	padding: 40px;
+	padding-bottom: 40px;
+	padding-left: 200px;
 	line-height: 2;
 	font-family: 'Raleway', sans-serif;
   }
@@ -4323,17 +4356,24 @@ margin-top: 1em;
 
 
 
-.Jonas {
+.Jonas, .Jeanine, .Blake, .Lee, .Rhonda {
   height: 350px;
   min-width: 16em;
+  /* max-width: 16em; */
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
 
 }
 
+@media(min-width: 1365px){
+	.Jonas, .Jeanine, .Blake, .Lee, .Rhonda {
+		min-width: 13em;
+	}
+}
 
-.Jeanine {
+
+/* .Jeanine {
   height: 350px;
   min-width: 16em;
   float: left;
@@ -4363,7 +4403,7 @@ margin-top: 1em;
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
-}
+} */
 
 
 .person1 > p {
