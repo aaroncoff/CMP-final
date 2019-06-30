@@ -821,7 +821,7 @@ input, select, textarea {
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1em;
+		/* padding: 0 1em; */
 		text-decoration: none;
 		width: 100%;
 	}
@@ -871,10 +871,10 @@ input, select, textarea {
 	select {
 		height: 3em;
 	}
-
+/* 
 	textarea {
 		padding: 0.75em 1em;
-	}
+	} */
 
 	input[type="checkbox"],
 	input[type="radio"] {
@@ -1534,7 +1534,8 @@ input, select, textarea {
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 		height: 69vh;
 		border-style: solid;
-		border-color: #111d6c;
+		border-color: #111e6c;
+		/* border-color: #830303; */
 		border-bottom-width: 0.48em !important;
 		border-top-width: 0.48em !important;
 		
@@ -1690,10 +1691,15 @@ input, select, textarea {
 
 
 		.content2 {
-			color: red !important;
+			color: white !important;
 			/* padding-top: 2em; */
 			justify-content: left;
 			font-size: 2.0em;
+			text-transform: uppercase;
+		}
+
+		.content2 > a {
+			color: white;
 		}
 
 		@media(max-height: 920px){
@@ -1791,7 +1797,8 @@ input, select, textarea {
 		}
 
 		.spotlight.style2 .content {
-      border-color: #111e6c;
+	  border-color: #111e6c;
+		/* border-color: #830303; */
       
 		}
 
@@ -2153,6 +2160,11 @@ input, select, textarea {
 		}
 
 		#banner .content {
+			/* font-weight: 10 !important; */
+			/* font-family: 'Raleway', sans-serif; */
+			/* font-family: "Roboto", Helvetica, sans-serif !important; */
+			/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; */
+			font-family: 'Allerta Stencil';
 			display: inline-block;
 			/* background-image: url("../css/images/ie/37294.jpeg"); */
 			/* margin-right: 1%; */
@@ -3533,7 +3545,7 @@ a {
 	flex-direction: column;
 	/* text-align: center; */
 	/* padding: 50px; */
-	padding-bottom: 120px;
+	/* padding-bottom: 120px; */
 	/* line-height: 30px; */
 	font-size: 24pt !important;
 	color: white;
@@ -3584,46 +3596,62 @@ a {
 	font-size: 24px !important;
 } */
 
-.address {
-  
-
-  margin: 0 auto;
- 
-  max-height: 80%;
-  /* padding-bottom: 20px; */
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  /* text-align: center; */
-  padding: 50px;
-  padding-bottom: 70px;
-  /* line-height: 30px; */
-  color: white;
-}
 
 .addressText {
   /* padding-right: 10%; */
   color: white;
-  font-weight: 30;
-  font-size: 18pt;
-  margin: 0;
+  
+
+
+  /* padding-top: 120px; */
+bottom: 30px;
+margin: 0 auto;
+/* padding-bottom: 20px; */
+width: 100%;
+display: flex;
+flex-direction: column;
+text-align: center;
+font-weight: 30;
+line-height: 30px;
+font-size: 24px;
 
 }
 
-.mapParent {
+.form-parent {
+
+	text-decoration-color: black;
+	width: 100%;
+	/* margin: 0 auto; */
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .form-child {
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	
+  
+  }
+  
+
+.mapParent {
+	/* margin: 0 0; */
 	width: 100%;
 	/* max-height: 150; */
 	display: flex;
 	flex-direction: column;
-	padding: 50px;
+	/* padding: 50px; */
 }
 
 .mapChild {
 	margin: 0 auto;
-	width: 55%;
+	padding-top: 30px;
+	/* width: 55%; */
 	display: flex;
 	flex-direction: column;
+	width: 85%;
 }
 
 .map {
@@ -3631,8 +3659,11 @@ a {
 	/* width: 100%; */
 	/* display: flex; */
 	/* flex-direction: column; */
-	padding: 150px;
-	bottom: -150px;
+	padding: 110px 0px;
+	top: 3em;
+	/* bottom: -415px; */
+	border-radius: 4px;
+	border: solid 1px rgba(255, 255, 255, 0.3);
 }
 
 .emailInst {
@@ -3640,7 +3671,7 @@ a {
   width: 49%;
   margin: 0 auto; */
 
-  padding-top: 120px;
+  /* padding-top: 120px; */
   margin: 0 auto;
   /* padding-top: 70px; */
 
@@ -3654,27 +3685,19 @@ a {
   font-size: 24px;
 }
 
+
 .zip {
   /* padding-left: 145px; */
   /* padding-left: 4em; */
 }
 
-.form-parent {
-
-  text-decoration-color: black;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+.contactRow {
+	padding: 3em;
+	display: flex;
+	flex-direction: row;
 }
 
-.form-child {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 75%;
 
-}
 
 .input {
     /* text-decoration-color: black; */
@@ -3683,6 +3706,7 @@ a {
   flex-direction: column;
   width: 65%;
   color: black;
+  
 
 }
 

@@ -198,6 +198,7 @@ export default class App extends Component {
       </ul>
       <ul class="copyright">
         <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net" target='_blank'>Aaron Coffey</a></li><li>Photography: <a href="http://braydonanderson.com/" target='_blank'>Braydon Anderson</a></li>
+        {/* <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net" target='_blank'>Aaron Coffey</a><p>With <a href="https://html5up.net/" target="_blank">HTML5up</a></p></li><li>Photography: <a href="http://braydonanderson.com/" target='_blank'>Braydon Anderson</a></li> */}
       </ul>
     </footer>
   </div>
