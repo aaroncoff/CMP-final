@@ -67,6 +67,7 @@ class Contact extends Component{
                         <a className='tel: 678-426-8802'>PHONE: 678-426-8802</a>
                     </div> */}
                     <div className='contactChild'>
+                    <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span>
                         {/* <div>ADDRESS: 459 Cadillac Pkwy</div>
                         <div className='zip'>Dallas, GA 30157</div>  */}
                         {/* <aside>Address:</aside> */}
@@ -148,7 +149,7 @@ class Contact extends Component{
                 </div>
 
             </div>
-            <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span>
+            {/* <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span> */}
         </div>
 
                 // <div>
