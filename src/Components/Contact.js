@@ -59,6 +59,7 @@ class Contact extends Component{
             <div className='contactParent'>
 
                 <span className="contactText">CONTACT US TODAY FOR A FREE QUOTE</span>
+                {/* <span className="phone"><a className='tel: 678-426-8802'>Phone: 678-426-8802</a></span> */}
 
                
                     
@@ -143,9 +144,11 @@ class Contact extends Component{
 
 
                     </div>
+                    
                 </div>
 
             </div>
+            <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span>
         </div>
 
                 // <div>

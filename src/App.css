@@ -3573,13 +3573,30 @@ a {
   /* width: 50%; */
   /* display: flex; */
   /* flex-direction: column; */
-  text-align: left;
-  text-justify: left;
+  /* text-align: left; */
+  /* text-justify: left; */
   font-weight: 30 !important;
   font-size: 18pt !important;
   float: right;
   /* padding-left: 100px; */
 
+
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 70px;
+  justify-content: center;
+  line-height: 2;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+
+}
+
+.phone > img {
+	width: 3%;
+	height: 3%;
+	padding-right: 5px;
 }
 
 /* .phone > h5 {
