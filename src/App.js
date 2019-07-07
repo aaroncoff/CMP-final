@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import routes from './routes';
 import routes2 from './routes2';
 import './App.css';
+// import './App2.css';
 // import './Test.css';
 import Logo from './Components/Logo';
 
@@ -22,6 +23,10 @@ export default class App extends Component {
 
   componentDidMount() {
     window.onclick = this.onWindowClicked;
+  }
+
+  disableDropdown() {
+    this.setState({ isDropdownEnabled: false});
   }
 
   disableSelection_dropotron(event) {
@@ -82,7 +87,7 @@ export default class App extends Component {
               <div className="dropdown dd-list">
                 <a onClick={this.dropdownClicked} className="dropbtn">Product Galleries</a>
                 <div id="myDropdown" className={`dropdown-content ${this.state.isDropdownEnabled ? 'show' : ''}`}>
-                  <Link to='/glassracks'>Glass Racks</Link>
+                  <Link to='/glassracks' >Glass Racks</Link>
                   <Link to='/metalfab'>Metal Fabrication</Link>
                 </div>
               </div>

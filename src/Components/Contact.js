@@ -91,7 +91,7 @@ class Contact extends Component{
                         Dallas, GA 30157
                         </a> */}
 
-                    </div>
+                
 
            
 
@@ -149,6 +149,7 @@ class Contact extends Component{
                 </div>
 
             </div>
+        </div>
             {/* <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span> */}
         </div>
 
