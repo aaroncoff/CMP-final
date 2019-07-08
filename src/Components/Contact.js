@@ -67,7 +67,15 @@ class Contact extends Component{
                         <a className='tel: 678-426-8802'>PHONE: 678-426-8802</a>
                     </div> */}
                     <div className='contactChild'>
-                    <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span>
+                        <div className='contactTextParent'>
+                            <div className='contactTextChild'>
+
+                                <span className="phone"><img alt={'phone-icon'} src={require('../Media/Images/phone_icon.svg')}></img><a className='tel: 678-426-8802'>678-426-8802</a></span>
+                
+                                <span className="addressMobile"><img alt={'address-icon'} src={require('../Media/Images/address_icon.png')}></img><a className='addressT' href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156" target='_blank'>459 Cadillac Pkwy<br/>Dallas, GA 30157</a></span>
+                            </div>
+                        </div>
+                    {/* <a href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156" target='_blank'>459 Cadillac Pkwy Dallas, GA 30157</a> */}
                         {/* <div>ADDRESS: 459 Cadillac Pkwy</div>
                         <div className='zip'>Dallas, GA 30157</div>  */}
                         {/* <aside>Address:</aside> */}
@@ -100,6 +108,8 @@ class Contact extends Component{
                 <div className="mapParent">
                     <div className="mapChild">
                         <a className="addressText" href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156" target='_blank'>459 Cadillac Pkwy Dallas, GA 30157</a>
+                        {/* <a className="addressMobile" href="https://www.google.com/maps/place/459+Cadillac+Pkwy,+Dallas,+GA+30157/@33.8967924,-84.8010043,17z/data=!4m5!3m4!1s0x88f530437aa62983:0x74077ce3c50ca825!8m2!3d33.896788!4d-84.7988156" target='_blank'>459 Cadillac Pkwy Dallas, GA 30157</a> */}
+
                         <Map className='map' google={this.props.google}
                         zoom={11}
                             
@@ -166,8 +176,7 @@ class Contact extends Component{
         )
     }
 }
-//former password:
-//NODEMAILER_PASSWORD=custm3t@l404
+
 
 export default GoogleApiWrapper ({
     apiKey: ('AIzaSyBwRY7CYE5KLAMzI-hpo1Df7qcBsfcftPc'),

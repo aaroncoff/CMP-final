@@ -67,7 +67,7 @@ export default class Home extends Component {
 
           <p>12 MONTH WARRANTY</p>
           <p>2 WEEK GUARANTEE</p>
-          <Link to='/contact'>CLICK HERE to Contact us FOR A FREE CONSULTATION AND ESTIMATE</Link>
+          <Link to='/contact'>FREE CONSULTATION AND ESTIMATE</Link>
         
         </header>
      
