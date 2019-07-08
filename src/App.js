@@ -192,15 +192,11 @@ export default class App extends Component {
 
 
        
-      <ul class="icons">
-        {/* <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> */}
-        {/* <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" class="icon alt fa-facebook" src="./Media/Images/fb-white.png"><span class="label">Facebook</span></a></li> */}
-        <li><a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" target="_blank"><img src={require("./Media/Images/fb-white new.png")} className="icon alt fa-facebook"/></a></li>
-        {/* <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-        <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-        <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li> */}
-      </ul>
+      <div className="fbParent">
+        <div className="fbChild">
+          <a href="https://www.facebook.com/Custom-Metal-Products-426651564470418/" target="_blank"><img src={require("./Media/Images/fb-white new.png")} className="facebook"/></a>
+        </div>
+      </div>
       <ul class="copyright">
         <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net" target='_blank'>Aaron Coffey</a></li><li>Photography: <a href="http://braydonanderson.com/" target='_blank'>Braydon Anderson</a></li>
         {/* <li>&copy; Custom Metal Products. All rights reserved.</li><li>Design: <a href="http://html5up.net" target='_blank'>Aaron Coffey</a><p>With <a href="https://html5up.net/" target="_blank">HTML5up</a></p></li><li>Photography: <a href="http://braydonanderson.com/" target='_blank'>Braydon Anderson</a></li> */}
