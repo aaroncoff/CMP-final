@@ -31,7 +31,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -2476,7 +2476,7 @@ body.is-touch #banner2 {
 	
 		.phone {
 		
-			font-size: 18pt !important;
+			font-size: 22pt !important;
 		}
 	}
 
@@ -3290,8 +3290,8 @@ body.is-touch #banner2 {
 	}
 
 	.phone {
-		width: 50% !important;
-		font-size: 18pt !important;
+		width: 60% !important;
+		/* font-size: 18pt; */
 	}
 }
 
@@ -3628,7 +3628,7 @@ a {
 	padding: 0 0;
 	/* padding-bottom: 120px; */
 	/* line-height: 30px; */
-	font-size: 24pt !important;
+	font-size: 24pt;
 	color: white;
 }
 
@@ -3670,36 +3670,48 @@ a {
 @media(min-width: 880px) {
 	.contactTextChild {
 		/* align-items: center !important; */
-		width: 50%;
+		width: 60%;
 	}
 }
 
 @media(min-width: 1050px) {
 	.contactTextChild {
 
-		width: 40%;
+		width: 50%;
 	}
 }
 
 @media(min-width: 1145px) {
 	.contactTextChild {
 
-		width: 35%;
+		width: 45%;
 	}
 }
 
 @media(min-width: 1350px) {
 	.contactTextChild {
 
-		width: 30%;
+		width: 40%;
 	}
 }
 
 @media(min-width: 1450px) {
 	.contactTextChild {
 
-		width: 25%;
+		width: 35%;
 	}
+	
+	.contactTextChild > span {
+		font-size: 30pt;
+	}
+}
+
+@media(min-width: 1650px) {
+	.contactTextChild {
+
+		width: 28%;
+	}
+	
 }
 
 
@@ -3733,7 +3745,7 @@ a {
   /* text-align: left; */
   /* text-justify: left; */
   font-weight: 30 !important;
-  font-size: 15pt !important;
+  /* font-size: 15pt !important; */
   float: left;
   /* padding-left: 100px; */
 
