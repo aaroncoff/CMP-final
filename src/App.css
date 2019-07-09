@@ -2463,9 +2463,20 @@ body.is-touch #banner2 {
 
 /* Medium */
 
-	@media screen and (min-width :1145px) {
+	@media screen and (min-width: 1145px) {
 		.spotlight .content {
 			font-size: 18pt;
+		}
+
+		.fbParent {
+			margin-top: 0em !important;
+		}
+	
+
+	
+		.phone {
+		
+			font-size: 18pt !important;
 		}
 	}
 
@@ -3256,17 +3267,31 @@ body.is-touch #banner2 {
   } */
 }
 
-@media(min-width: 1145px){
+/* @media(min-width: 1145px){
 	.fbParent {
 		margin-top: 0em !important;
 	}
-}
+
+	.contactTextChild {
+		font-size: 18pt;
+	}
+
+	.phone {
+	
+		font-size: 18pt !important;
+	}
+} */
 
 
 
 @media(min-width: 880px){
 	.fbParent {
 		margin-top: 10em;
+	}
+
+	.phone {
+		width: 50% !important;
+		font-size: 18pt !important;
 	}
 }
 
@@ -3618,9 +3643,65 @@ a {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	/* width: 25%; */
 	align-items: left;
+	padding-bottom: 2em;
 }
+/* 
+@media(max-width: 1400px){
+	.contactTextChild {
+
+		width: 30%;
+
+	}
+} */
+
+/* @media(max-width: 1170px){
+	.contactTextChild {
+
+		width: 35%;
+
+	}
+} */
+
+
+
+
+@media(min-width: 880px) {
+	.contactTextChild {
+		/* align-items: center !important; */
+		width: 50%;
+	}
+}
+
+@media(min-width: 1050px) {
+	.contactTextChild {
+
+		width: 40%;
+	}
+}
+
+@media(min-width: 1145px) {
+	.contactTextChild {
+
+		width: 35%;
+	}
+}
+
+@media(min-width: 1350px) {
+	.contactTextChild {
+
+		width: 30%;
+	}
+}
+
+@media(min-width: 1450px) {
+	.contactTextChild {
+
+		width: 25%;
+	}
+}
+
 
 /* contactTextChinl > * {
 	vertical-align: left;
@@ -3639,7 +3720,7 @@ a {
   justify-content: center;
 } */
 
-.phone, .addressMobile {
+.phone {
   /* margin: 0; */
   /* margin-left: 8.91em; */
   /* left: 55%; */
@@ -3652,21 +3733,21 @@ a {
   /* text-align: left; */
   /* text-justify: left; */
   font-weight: 30 !important;
-  font-size: 18pt !important;
+  font-size: 15pt !important;
   float: left;
   /* padding-left: 100px; */
+
 
 
   text-align: left;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  padding: 70px;
+  padding: 5px;
   justify-content: right;
   line-height: 2;
   font-family: 'Raleway', sans-serif;
   color: white !important;
-
 }
 
 .addressMobile > a {
@@ -3734,22 +3815,17 @@ font-size: 24px;
 .addressMobile {
 	/* padding-right: 10%; */
 	color: white;
-	
-  
-  
-	/* padding-top: 120px; */
-  /* bottom: 30px; */
-  /* margin: 0 auto;
-  padding-bottom: 20px;
-  width: 100%; */
-  display: none;
-  /* flex-direction: column;
-  text-align: center;
-  font-weight: 30;
-  line-height: 30px;
-  font-size: 24px;
-  right: 10px;
-   */
+  	display: none;
+   font-weight: 30 !important;
+   font-size: 15pt !important;
+   /* float: left; 
+   text-align: left; */
+   width: 100%;
+   margin: 0 auto;
+   padding: 5px;
+   /* justify-content: right; */
+   font-family: 'Raleway', sans-serif;
+   color: white !important;
   }
 
 .form-parent {
@@ -3908,6 +3984,8 @@ font-size: 24px;
 /* 
 		bottom: 80px; */
 	}
+
+
 	.form-parent {
 
 		text-decoration-color: black;
