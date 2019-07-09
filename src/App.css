@@ -7,9 +7,9 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-* {
+/* * {
   position: relative;
-}
+} */
 
 
 
@@ -3285,6 +3285,11 @@ body.is-touch #banner2 {
 
 
 @media(min-width: 880px){
+	* {
+		position: relative;
+	  }
+	  
+
 	.fbParent {
 		margin-top: 10em;
 	}
@@ -4005,8 +4010,8 @@ font-size: 24px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		top: 320px;
-		padding-bottom: 100px;
+		/* top: 320px; */
+		/* padding-bottom: 100px; */
 		
 	  }
 	  
@@ -4166,7 +4171,7 @@ font-size: 24px;
 		border: none;
 		width: 30%;
 		margin: 0 auto;
-		height: 30px;
+		height: 40px;
 		font-weight: bolder;
 	  
 	  }
