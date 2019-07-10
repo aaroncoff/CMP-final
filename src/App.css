@@ -4014,25 +4014,24 @@ font-size: 24px;
 	}
 
 
-	.form-parent {
+	/* .form-parent {
 
 		text-decoration-color: black;
 		width: 60%;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
-		/* top: 320px; */
-		/* padding-bottom: 100px; */
 		
-	  }
-	  
+		
+	  } */
+/* 	  
 	  .form-child {
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		width: 75%;
 	  
-	  }
+	  } */
 	  
 	  /* .input {
 
@@ -4045,7 +4044,7 @@ font-size: 24px;
 	  
 	  } */
 
-	  .mapParent {
+	  /* .mapParent {
 		margin: 0 auto;
 		width: 60%;
 	
@@ -4053,7 +4052,7 @@ font-size: 24px;
 		flex-direction: column;
 		
 		padding: 50px;
-	}
+	} */
 	
 	/* .mapChild {
 		margin: 0 auto;
@@ -4062,17 +4061,16 @@ font-size: 24px;
 		flex-direction: column;
 	} */
 	
-	.map {
+	/* .map {
 		margin: 0 auto;
 		width: 100%;
 
-		/* padding: 150px;
-		bottom: -150px; */
-	}
 
-	.phone, .addressMobile {
+	} */
+
+	/* .phone, .addressMobile {
 		padding: 20px;
-	}
+	} */
 
 
 	/* .fbParent {
