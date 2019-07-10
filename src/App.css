@@ -3298,6 +3298,11 @@ body.is-touch #banner2 {
 	* {
 		position: relative;
 	  }
+
+	.contactRow {
+		
+		flex-direction: row;
+	}
 	  
 
 	.fbParent {
@@ -3940,7 +3945,7 @@ font-size: 24px;
 @media(max-width: 750px) {
 
 	.addressText {
-		bottom: 50px;
+		/* bottom: 50px; */
 	}
 
 	.map {
@@ -3949,9 +3954,9 @@ font-size: 24px;
 	}
 
 	.contactRow {
-		flex-direction: column;
+		/* flex-direction: column;
 		padding: 0;
-		bottom: 0px;
+		bottom: 0px; */
 		/* height: 1em; */
 	
 	}
@@ -3963,9 +3968,9 @@ font-size: 24px;
 		display: flex;
 		flex-direction: column; */
 		/* top: 350px; */
-		padding-bottom: 0px;
+		/* padding-bottom: 0px;
 		padding-top: 0px;
-		top: 50px;
+		top: 50px; */
 		
 	  }
 
@@ -4008,7 +4013,7 @@ font-size: 24px;
 
 @media(max-width: 1145px) {
 	.contactRow {
-		flex-direction: column;
+		/* flex-direction: column; */
 /* 
 		bottom: 80px; */
 	}
