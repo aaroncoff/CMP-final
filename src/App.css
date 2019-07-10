@@ -3051,73 +3051,7 @@ z-index: 50000;
 
 
 
-/* a { */
-  /* color: white;
-  text-shadow: -1px 0 black, 0px black, 1px 0 black, 0 -1px black;
-  text-decoration: none;
-  padding-left: 25px;
-  font-weight: 30;
-  box-shadow: inset 1px 1px 150px #0000; */
 
-  /* background: transparent; */
-  /* background-color: black; */
-
-
-  /* text-transform: uppercase;
-  color: white;
-  padding: 0 0 10px 25px;
-  font-size: 15pt;
-  border: none;
-  cursor: pointer;
-  font-weight: 30;
-  z-index: 100002; */
-
-/* } */
-
-/* @media(max-width: 590px) {
-  a {
-
-    color: white;
-    font-weight: 30;
-  }
-
-  .primary-nav {
-    width: 100%;
-	margin: 0 auto;
-	height: 920px;
-  }
-  }
-
-@media(min-width: 590px) {
-a {
-  font-weight: 30;
-  font-size: 12pt;
-
-}
-}
-
-@media(min-width: 850px) {
-  a {
-    font-weight: 30;
-    font-size: 17pt;
-  }
-  }
-
-  @media(min-width: 1200px) {
-    a {
-      font-weight: 30;
-      font-size: 27pt;
-    }
-    }
-
-.primary-nav Link {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  color: black;
- 
-
-} */
 
 #toggle-menu {
   display: none;
@@ -3207,6 +3141,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	font-size: 15pt;
 }
 
 .contactTextChild {
@@ -3399,7 +3334,7 @@ font-size: 24px;
 	color: white;
   	display: none;
    font-weight: 30 !important;
-   font-size: 15pt !important;
+   /* font-size: 15pt !important; */
    /* float: left; 
    text-align: left; */
    width: 100%;
