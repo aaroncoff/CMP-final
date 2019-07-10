@@ -2211,7 +2211,7 @@ body.is-touch #banner2 {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				/* font-size: 12pt; */
 			}
 
 		/* Spotlight */
@@ -3461,6 +3461,12 @@ font-size: 24px;
 	border: solid 1px rgba(255, 255, 255, 0.3);
 	/* height: 20em !important; */
 	margin-bottom: 10px;
+}
+
+@media(min-width: 1680px) {
+	.map {
+		padding: 230px;
+	}
 }
 
 
