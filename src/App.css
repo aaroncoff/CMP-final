@@ -3399,6 +3399,8 @@ font-size: 24px;
 
   .input > * {
 	margin-bottom: 10px;
+	border: none;
+	border-radius: 5px;
   }
   
   .input > button {
