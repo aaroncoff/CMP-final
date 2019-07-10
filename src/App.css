@@ -2202,7 +2202,7 @@ body.is-touch #banner2 {
 	
 		.phone {
 		
-			font-size: 22pt !important;
+			font-size: 15pt !important;
 		}
 	}
 
@@ -3223,7 +3223,7 @@ z-index: 50000;
 @media(min-width: 1650px) {
 	.contactTextChild {
 
-		width: 28%;
+		width: 35%;
 	}
 	
 }
