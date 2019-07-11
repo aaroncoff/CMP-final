@@ -2925,7 +2925,8 @@ body.is-touch #banner2 {
   } */
 
   #banner .content {
-	top: 4.5em;
+	top: 0em;
+	margin-bottom: 5px;
   }
 }
 
