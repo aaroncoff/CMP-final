@@ -4146,11 +4146,11 @@ margin-top: 1em;
 	display: flex;
 	justify-content: center;
 	color: white;
-	font-size: 24px;
+	/* font-size: 24px; */
 	margin: 0 auto !important;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	line-height: 2;
+	/* line-height: 2; */
 	font-family: 'Raleway', sans-serif;
   }
 
@@ -4158,12 +4158,13 @@ margin-top: 1em;
 	display: flex;
 	justify-content: center;
 	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+	font-size: 12pt;
 	margin: 0 auto !important;
+	padding-top: 20px;
 	padding-bottom: 40px;
-	padding-left: 200px;
-	line-height: 2;
-	font-family: 'Raleway', sans-serif;
+	padding-left: 50px;
+	line-height: 2.5;
+
   }
   
   .grintro {
@@ -4231,6 +4232,10 @@ margin-top: 1em;
 
 	.aboutChild {
 	width: 80%;
+	}
+
+	.aboutUs2 {
+	font-size: 15pt;
 	}
 
 	.Jonas, .Jeanine, .Blake, .Lee, .Rhonda {
