@@ -4572,10 +4572,28 @@ margin-top: 1em;
 }
 
 .aboutUs {
-  font-size: 2.5vw;
+  font-size: 15pt;
 }
 
-@media(max-width: 750px){
+@media(min-width: 550px){
+	.aboutUs {
+		font-size: 18pt;
+	}
+}
+
+@media(min-width: 880px){
+	.aboutUs {
+		font-size: 20pt;
+	}
+}
+
+@media(min-width: 1170px){
+	.aboutUs {
+		font-size: 26pt;
+	}
+}
+
+/* @media(max-width: 750px){
   .aboutUs {
      font-size: 2.3vw;
   }
@@ -4586,7 +4604,7 @@ margin-top: 1em;
      font-size: 2.2vw;
      font-weight: bold;
   }
-}
+} */
 
 .clearfix::after {
   content: "";
